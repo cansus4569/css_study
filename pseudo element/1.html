@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* first-line marker placeholder before after */
+        p::first-line {
+            color: red;
+        }
+        p::first-letter {
+            color: blue;
+        }
+        li::marker {
+            color: orange;
+            font-size: 40px;
+        }
+        input::placeholder {
+            font-size: 24px;
+            color: green;
+        }
+        span::before {
+            content: "앞에 추가 ";
+            color: red;
+            font-weight: 900;
+        }
+        span::after {
+            content: " 앞에 추가 ";
+            color: blue;
+            font-weight: 450;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+    </p>
+    <ul>
+        <li>강아쥐</li>
+        <li>고양이</li>
+        <li>다람쥐</li>
+        <li>햄스터</li>
+    </ul>
+    <input type="text" placeholder="anything">
+    <span>원래 쓰여 있던 내용</span>
+    
+</body>
+</html>

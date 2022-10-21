@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* hover active focus disabled nth-child() */
+        [type="button"] {
+            width: 100px;
+            height: 30px;
+            background-color: tomato;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        [type="button"]:hover {
+            background-color: gray;
+        }
+
+        [type="button"]:active {
+            background-color: blue;
+        }
+
+        input:focus {
+            color: white;
+            background-color: purple;
+        }
+
+        input:disabled {
+            height: 30px;
+        }
+
+        .container {
+            display:flex;
+            justify-content: space-between;
+        }
+        .box {
+            width: 50px; height: 50px;
+            background-color: teal;
+            color: white;
+        }
+        .box:nth-child(2n) {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="button">
+    <input type="text" placeholder="anything">
+    <input type="text" placeholder="anything" disabled>
+    <div class="container">
+        <div class="box">1번</div>
+        <div class="box">2번</div>
+        <div class="box">3번</div>
+        <div class="box">4번</div>
+        <div class="box">5번</div>
+    </div>
+
+</body>
+
+</html>
