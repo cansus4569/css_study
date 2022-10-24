@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css priority</title>
+    <style>
+        #desc{
+            color:silver;
+        }
+        .main-content p {
+            color:red !important;
+        }
+        p{
+            color:blue;
+        }
+        p{
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>CSS 우선순위</h1>
+    <section class="main-content">
+        <h2>section title</h2>
+        <p id="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque ullam, aliquam quibusdam possimus vitae numquam a totam. Laboriosam natus explicabo consequatur quidem est distinctio rerum, ex vero libero commodi.
+        </p>
+        <p style="color:red;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat mollitia consequuntur distinctio, odio impedit quisquam? Veritatis placeat architecto aspernatur sequi, esse in eaque amet, dignissimos, natus aut laudantium dolore.
+        </p>
+    </section>
+    <section>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, commodi voluptates rerum facere impedit magnam consectetur officia nam vero! Nostrum reprehenderit iusto rem velit corrupti officia neque eos facere earum.
+        </p>
+    </section>
+</body>
+</html>
